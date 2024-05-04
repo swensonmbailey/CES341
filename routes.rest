@@ -1,0 +1,21 @@
+// LOCALHOST
+###
+GET http://localhost:3000/contacts
+###
+GET http://localhost:3000/contacts/66355f2efbf9f61998854cb9
+###
+GET http://localhost:3000/contacts/663565a1fbf9f61998854cbd
+###
+GET http://localhost:3000/contacts/663565c9fbf9f61998854cbe
+###
+GET http://localhost:3000/contacts/6635660afbf9f61998854cbf
+
+// PRODUCTION Deploy
+# ###
+# GET https://cse341-instructor.herokuapp.com/contacts
+# ###
+# GET https://cse341-instructor.herokuapp.com/contacts/622023f642f9ab4cd6e060b2
+# ###
+# GET https://cse341-instructor.herokuapp.com/contacts/622023f642f9ab4cd6e060b3
+# ###
+# GET https://cse341-instructor.herokuapp.com/contacts/622023f642f9ab4cd6e060b4

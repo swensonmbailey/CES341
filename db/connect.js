@@ -1,7 +1,6 @@
-const MongoClient = require('mongodb').MongoClient;
-
 const dotenv = require('dotenv');
 dotenv.config();
+const MongoClient = require('mongodb').MongoClient;
 
 let _db;
 
@@ -16,8 +15,7 @@ const initDb = (callback) => {
       callback(null, _db);
     })
     .catch((err) => {
-        console.log('Db had error');
-        callback(err);
+      callback(err);
     });
 };
 
@@ -28,7 +26,12 @@ const getDb = () => {
   return _db;
 };
 
+const close = () => {
+  _db.close();
+}
+
 module.exports = {
   initDb,
   getDb,
+  close
 };
