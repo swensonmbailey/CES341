@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 // const MongoClient = require('mongodb').MongoClient;
 const mongodb = require('./db/connect');
 

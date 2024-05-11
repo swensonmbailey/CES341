@@ -1,19 +1,23 @@
-// const routes = require('express').Router();
-// const lesson2Controller = require('../controllers/lesson2');
-
-// routes.get('/contacts/', lesson2Controller.contactsRoute);
-// routes.get('/contacts/:id', lesson2Controller.findContactRoute);
-
-
-// module.exports = routes;
 
 const express = require('express');
 const router = express.Router();
 
+
 const contactsController = require('../controllers/lesson2');
+const requestsController = require('../controllers/lesson3');
 
 router.get('/', contactsController.contactsRoute);
 
 router.get('/:id', contactsController.findContactRoute);
+
+//post route
+
+router.post('/', requestsController.postRoute);
+
+//put route
+router.put('/:id', requestsController.putRoute);
+
+//delete route
+router.delete('/:id', requestsController.deleteRoute);
 
 module.exports = router;
