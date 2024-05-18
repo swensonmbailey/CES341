@@ -5,7 +5,7 @@
     "description": "Description",
     "version": "1.0.0"
   },
-  "host": "ces341-z70g.onrender.com:10000",
+  "host": "ces341-z70g.onrender.com",
   "basePath": "/",
   "schemes": [
     "http"
