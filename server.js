@@ -13,6 +13,11 @@ const mongodb = require('./db/connect');
 
 app.use('/', require('./routes'));
 
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  next();
+});
+
 const port = 3000;
 
 
