@@ -6,7 +6,7 @@ const lesson1Controller = require('../controllers/lesson1');
 // routes.get('/lukas', lesson1Controller.lukasRoute);
 
 routes.use('/contacts', require('./contacts'));
-
+routes.use('/', require('./swagger'));
 
 routes.use(
     '/',
