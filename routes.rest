@@ -2,7 +2,7 @@
 ###
 GET http://localhost:3000/contacts
 ###
-GET http://localhost:3000/contacts/66355f2efbf9f61998854cb9
+GET http://localhost:3000/contacts/
 ###
 GET http://localhost:3000/contacts/663565a1fbf9f61998854cbd
 ###
@@ -38,20 +38,20 @@ Content-Type: application/json
 }
 
 ###
-PUT http://localhost:3000/contacts/663fe065d554d8ab5d1cbb57 HTTP/1.1
+PUT http://localhost:3000/contacts/663ff19d95975aa530d831b4 HTTP/1.1
 Content-Type: application/json
 
 {
-  "firstName":"micha",
+  "firstName":"Lukas",
   "lastName":"Bailey",
-  "email":"lukasb@gmail.com",
+  "email":"pam@gmail.com",
   "favoriteColor":"none",
   "birthday":"1998-08-21"
   
 }
 
 ###
-DELETE http://localhost:3000/contacts/663fe065d554d8ab5d1cbb57 HTTP/1.1
+DELETE http://localhost:3000/contacts/663ff19d95975aa530d831b4 HTTP/1.1
 
 
 
@@ -59,32 +59,32 @@ DELETE http://localhost:3000/contacts/663fe065d554d8ab5d1cbb57 HTTP/1.1
 //lesson 3 Render
 
 ###
-POST http://localhost:3000/contacts HTTP/1.1
+POST https://ces341-z70g.onrender.com/contacts HTTP/1.1
 Content-Type: application/json
 
 {
-  "firstName":"Lukas",
+  "firstName":"sophie",
   "lastName":"Bailey",
-  "email":"lukasb@gmail.com",
+  "email":"sophie@gmail.com",
   "favoriteColor":"none",
   "birthday":"1998-08-21"
   
 }
 
 ###
-PUT http://localhost:3000/contacts/663fe065d554d8ab5d1cbb57 HTTP/1.1
+PUT https://ces341-z70g.onrender.com/contacts/663ff1e114a86c6fdef95651 HTTP/1.1
 Content-Type: application/json
 
 {
-  "firstName":"micha",
+  "firstName":"Sophie",
   "lastName":"Bailey",
-  "email":"lukasb@gmail.com",
-  "favoriteColor":"none",
+  "email":"sophie@yahoo.com",
+  "favoriteColor":"pink",
   "birthday":"1998-08-21"
   
 }
 
 ###
-DELETE http://localhost:3000/contacts/663fe14f568892e6e5845559 HTTP/1.1
+DELETE https://ces341-z70g.onrender.com/contacts/663ff1e114a86c6fdef95651 HTTP/1.1
 
 
