@@ -11,9 +11,10 @@ app.use(express.urlencoded({extended: true}));
 // const MongoClient = require('mongodb').MongoClient;
 const mongodb = require('./db/connect');
 
-app.use('/', require('./routes'));
+app
+ .use('/', require('./routes'))
 
-app.use((req, res, next) => {
+ .use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader(
     'Access-Control-Allow-Headers',
