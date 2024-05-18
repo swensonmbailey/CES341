@@ -12,8 +12,6 @@ app.use(express.urlencoded({extended: true}));
 const mongodb = require('./db/connect');
 
 app
- .use('/', require('./routes'))
-
  .use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader(
@@ -23,7 +21,10 @@ app
   res.setHeader('Content-Type', 'application/json');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   next();
-});
+ })
+ .use('/', require('./routes'));
+
+
 
 const port = 3000;
 
